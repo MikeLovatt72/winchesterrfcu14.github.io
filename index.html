@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Winchester RFC U14 Boys — squad hub for players and parents. Training programme, U14 rules, summer camps, and contacts. Season 2026–27.">
-  <title>Winchester RFC · U14 Boys</title>
+  <meta name="description" content="Winchester RFC U14 Boys — squad hub for players and parents. Training, U14 rules, 1-3-3-1 system, sub-units, welfare and summer camps. Season 2026–27.">
+  <title>Winchester RFC · U14 Boys · Season 2026–27</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,44 +12,54 @@
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- ── NAV ─────────────────────────────────────────────────────────────── -->
   <header class="site-nav" id="top">
     <div class="nav-inner">
       <a href="#top" class="nav-logo">
-        <span class="logo-wrfc">WINCHESTER RFC</span>
-        <span class="logo-u14">U14 BOYS · 2026–27</span>
+        <span class="logo-badge">WRFC</span>
+        <span class="logo-text">
+          <span class="logo-club">WINCHESTER RFC</span>
+          <span class="logo-age">U14 BOYS · 2026–27</span>
+        </span>
       </a>
-      <nav class="nav-links">
+      <nav class="nav-links" id="navLinks">
+        <a href="#news">News</a>
         <a href="#intro">Welcome</a>
         <a href="#training">Training</a>
+        <a href="#system">Our System</a>
         <a href="#rules">U14 Rules</a>
-        <a href="#positions">Positions</a>
         <a href="#welfare">Welfare</a>
         <a href="#camps">Camps</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <nav class="mobile-menu" id="mobileMenu">
-      <a href="#intro"     onclick="closeMobile()">Welcome</a>
-      <a href="#training"  onclick="closeMobile()">Training</a>
-      <a href="#rules"     onclick="closeMobile()">U14 Rules</a>
-      <a href="#positions" onclick="closeMobile()">Positions</a>
-      <a href="#welfare"   onclick="closeMobile()">Welfare</a>
-      <a href="#camps"     onclick="closeMobile()">Camps</a>
-      <a href="#contact"   onclick="closeMobile()">Contact</a>
+    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#news"     onclick="closeMobile()">News</a>
+      <a href="#intro"    onclick="closeMobile()">Welcome</a>
+      <a href="#training" onclick="closeMobile()">Training</a>
+      <a href="#system"   onclick="closeMobile()">Our System</a>
+      <a href="#rules"    onclick="closeMobile()">U14 Rules</a>
+      <a href="#welfare"  onclick="closeMobile()">Welfare</a>
+      <a href="#camps"    onclick="closeMobile()">Camps</a>
+      <a href="#contact"  onclick="closeMobile()">Contact</a>
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- ── HERO ────────────────────────────────────────────────────────────── -->
   <section class="hero" id="home">
     <div class="hero-bg-number" aria-hidden="true">14</div>
     <div class="hero-inner">
-      <p class="hero-eyebrow">Winchester RFC · Season 2026–27</p>
+      <div class="hero-kicker">
+        <span class="hero-diamond" aria-hidden="true">◆</span>
+        <span>Winchester RFC · Season 2026–27</span>
+      </div>
       <h1 class="hero-headline">U14<br>BOYS</h1>
-      <p class="hero-sub">Your squad hub — training programme, U14 rules, positional guides, welfare, and everything you need to prepare for the season ahead.</p>
+      <p class="hero-sub">Your squad hub — training programme, our playing system, U14 rules, positional guides, welfare and summer camps.</p>
       <div class="hero-actions">
-        <a href="#intro" class="btn-primary">Read the Welcome</a>
+        <a href="#system" class="btn-primary">Our Playing System</a>
         <a href="#training" class="btn-ghost">Training Programme</a>
       </div>
       <div class="hero-stats">
@@ -57,23 +67,62 @@
         <div class="stat-div"></div>
         <div class="stat"><span class="stat-n">19 Jun</span><span class="stat-l">Programme starts</span></div>
         <div class="stat-div"></div>
-        <div class="stat"><span class="stat-n">28 Aug</span><span class="stat-l">Trial match</span></div>
+        <div class="stat"><span class="stat-n">1-3-3-1</span><span class="stat-l">Our system</span></div>
         <div class="stat-div"></div>
         <div class="stat"><span class="stat-n">5 Sep</span><span class="stat-l">Season begins</span></div>
       </div>
     </div>
   </section>
 
-  <!-- BANNER -->
+  <!-- ── REGISTER BANNER ─────────────────────────────────────────────────── -->
   <div class="banner">
     <div class="banner-inner">
       <span class="banner-tag">ACTION REQUIRED</span>
-      <span class="banner-text">All U14 players must register on <strong>gms.rfu.com</strong> before 5 September 2026. Parents must create or log in to their RFU account.</span>
+      <span class="banner-text">All U14 players must register on <strong>gms.rfu.com</strong> before 5 September 2026. Parents must create or log in to their RFU account to register.</span>
       <a href="https://gms.rfu.com" target="_blank" rel="noopener" class="banner-link">Register now →</a>
     </div>
   </div>
 
-  <!-- WELCOME / PROGRAMME INTRO -->
+  <!-- ── NEWS & UPDATES ──────────────────────────────────────────────────── -->
+  <section class="section section--dark" id="news">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Latest</p>
+        <h2 class="section-title">News &amp; Updates</h2>
+        <p class="section-intro">Updates from Martin and the coaching team. Check back regularly for session news, fixture announcements, and squad information.</p>
+      </div>
+      <div class="news-grid">
+
+        <article class="news-card news-card--featured">
+          <div class="news-meta"><span class="news-tag news-tag--new">New</span><time>June 2026</time></div>
+          <h3>Welcome to the Summer Programme</h3>
+          <p>Our U14 summer training programme is now live. Eleven coached Thursday sessions run from 19 June through 28 August at North Walls Park. Download the full programme document in the Resources section below, and check this page for weekly session notes from the coaching team.</p>
+          <p>First session: <strong>Thursday 19 June, 6:00pm – 7:30pm, North Walls Park.</strong> Bring water, boots, and plenty of enthusiasm. See you there.</p>
+        </article>
+
+        <article class="news-card">
+          <div class="news-meta"><span class="news-tag">Camps</span><time>June 2026</time></div>
+          <h3>Summer Camps — Two Options Confirmed</h3>
+          <p>Two summer rugby camps are available for our U14 players this summer — Bath Rugby's residential at Walhampton School (Lymington) and Embley School's Rugby Performance Camp (Romsey, August). Full details in the Camps section. Spaces are limited — early booking recommended.</p>
+        </article>
+
+        <article class="news-card">
+          <div class="news-meta"><span class="news-tag">System</span><time>June 2026</time></div>
+          <h3>Introducing Our Playing System: 1-3-3-1</h3>
+          <p>This season we introduce a structured playing approach built around the 1-3-3-1 framework and the diamond formation. Every player needs to understand the system, their sub-unit, and their role within it. Read the full breakdown in the Our System section.</p>
+        </article>
+
+        <article class="news-card">
+          <div class="news-meta"><span class="news-tag">Admin</span><time>June 2026</time></div>
+          <h3>Season Registration Opens Now</h3>
+          <p>All players must be registered through the RFU GMS system before the season starts on 5 September. Parents/guardians must create or log in to their account at gms.rfu.com. Please complete this as soon as possible — players cannot be selected without a valid registration.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WELCOME ─────────────────────────────────────────────────────────── -->
   <section class="section section--light" id="intro">
     <div class="container">
       <div class="section-header">
@@ -82,15 +131,15 @@
       </div>
       <div class="intro-layout">
         <div class="intro-text">
-          <p>As we look ahead to the U14s season, we've pulled together this resource to help parents and players understand the fundamentals of how they should be looking to train, condition and prepare. This is a partner piece to the Transition to U14s document, where we lay out the key differences between U13s and U14s.</p>
-          <p>Those differences will, by necessity, drive a more structured approach to how we prepare, coach and execute the U14s season. <strong>Essentially the U14s season is a transition year</strong> — a deliberate "by design" RFU pathway, bridging the step up from children's rugby to the junior game. The laws, pitch size and team shape all move closer to the adult version of the game — again, by design.</p>
+          <p>As we look ahead to the U14s season, we've pulled together this resource to help parents and players understand the fundamentals of how to train, condition and prepare. This is a partner piece to the Transition to U14s document, which lays out the key rule differences between U13s and U14s.</p>
+          <p>Those differences will, by necessity, drive a more structured approach to how we prepare, coach and execute the U14s season. <strong>Essentially the U14s season is a transition year</strong> — a deliberate "by design" RFU pathway, bridging the step up from children's rugby to the junior game. The laws, pitch size and team shape all move closer to the adult version of the game, by design.</p>
           <h3>What this means for players</h3>
           <div class="intro-pillars">
-            <div class="ip-row"><span class="ip-label">Structure</span><span>Players will start to learn true positional roles and sub-units grow in importance, creating the foundation for the 15-player team.</span></div>
-            <div class="ip-row"><span class="ip-label">Space</span><span>More space to manage and take advantage of while adjusting to the 15-player game.</span></div>
-            <div class="ip-row"><span class="ip-label">Set piece</span><span>Scrums, lineouts and mauls grow in importance and start to be used as attacking weapons and platforms to launch plays.</span></div>
-            <div class="ip-row"><span class="ip-label">Dimensions</span><span>More options on both sides of the ball — kicking in all aspects of the game, and the addition of flankers.</span></div>
-            <div class="ip-row"><span class="ip-label">Strategy</span><span>Understanding the different zones on the pitch and what we are trying to achieve in those zones.</span></div>
+            <div class="ip-row"><span class="ip-label">Structure</span><p>Players will start to learn true positional roles. Sub-units grow in importance, creating the foundation for the 15-player team.</p></div>
+            <div class="ip-row"><span class="ip-label">Space</span><p>More space to manage and take advantage of while adjusting to the 15-player game.</p></div>
+            <div class="ip-row"><span class="ip-label">Set piece</span><p>Scrums, lineouts and mauls grow in importance and start to be used as attacking weapons and platforms to launch plays.</p></div>
+            <div class="ip-row"><span class="ip-label">Dimensions</span><p>More options on both sides of the ball — kicking in all aspects, and the addition of flankers.</p></div>
+            <div class="ip-row"><span class="ip-label">Strategy</span><p>Understanding different zones on the pitch and what we are trying to achieve in those zones — the foundation of our 1-3-3-1 system.</p></div>
           </div>
           <p class="intro-sign">With our progression to an older age group we will look to incorporate approaches and techniques to support player-led goals, player-led consistency, and team developmental goals both on and off the field.</p>
           <p class="intro-sig">— Martin &amp; the U14 Coaching Team</p>
@@ -98,34 +147,21 @@
         <div class="intro-aims">
           <div class="aims-card">
             <h3>Our four aims for the season</h3>
-            <p class="aims-sub">This programme is built to develop all four key pillars.</p>
             <div class="aim">
               <div class="aim-n">1</div>
-              <div>
-                <strong>Game Understanding</strong>
-                <p>Reading the game — shape in attack and defence, knowing where to be, making correct decisions under pressure. <em>What's my next job?</em></p>
-              </div>
+              <div><strong>Game Understanding</strong><p>Reading the game — shape in attack and defence, knowing where to be, making correct decisions under pressure. <em>What's my next job?</em></p></div>
             </div>
             <div class="aim">
               <div class="aim-n">2</div>
-              <div>
-                <strong>Outstanding Behaviours</strong>
-                <p>Attitude, coachability, communication on the pitch, effort, and how a player carries themselves in a team environment.</p>
-              </div>
+              <div><strong>Outstanding Behaviours</strong><p>Attitude, coachability, communication on the pitch, effort, and how a player carries themselves in a team environment.</p></div>
             </div>
             <div class="aim">
               <div class="aim-n">3</div>
-              <div>
-                <strong>Athletic Potential</strong>
-                <p>Speed, endurance, power, agility, and movement quality. Not just current fitness — potential to develop physically.</p>
-              </div>
+              <div><strong>Athletic Development</strong><p>Speed, endurance, power, agility, and movement quality. Not just current fitness — potential to develop physically through consistent work.</p></div>
             </div>
             <div class="aim">
               <div class="aim-n">4</div>
-              <div>
-                <strong>Fundamental Skills</strong>
-                <p>Catch &amp; Pass, Carry, Tackle, and Breakdown — the four core skills coached and monitored at every session.</p>
-              </div>
+              <div><strong>Fundamental Skills</strong><p>Catch &amp; Pass, Carry, Tackle, and Breakdown — the four core skills coached and observed at every session.</p></div>
             </div>
           </div>
         </div>
@@ -133,52 +169,49 @@
     </div>
   </section>
 
-  <!-- TRAINING PROGRAMME -->
+  <!-- ── TRAINING PROGRAMME ──────────────────────────────────────────────── -->
   <section class="section section--dark" id="training">
     <div class="container">
       <div class="section-header">
         <p class="section-eyebrow">Summer 2026 · Mid June – End August</p>
         <h2 class="section-title">Training Programme</h2>
-        <p class="section-intro">One coached Thursday session at North Walls Park, plus two self-led sessions per week. Non-contact June–July. Adapted contact from 1 August (RFU Reg 15.8.6).</p>
+        <p class="section-intro">One coached Thursday session per week at North Walls Park, plus two self-led sessions. Non-contact June–July. Adapted contact from 1 August (RFU Reg 15.8.6).</p>
       </div>
 
       <div class="three-col">
         <div class="info-card info-card--amber">
           <div class="card-icon">📅</div>
-          <h3>Thursday — Coached</h3>
-          <p>North Walls Park · 90 mins · 6–8pm. Skill Zone (30 mins) + Touch/Tag Game Zone (35 mins) + warm-up and debrief. RFU Activate warm-up used from Phase 3.</p>
-          <p class="card-note">June–July: non-contact only · August: Adapted Contact Game On (Reg 15.8.6)</p>
+          <h3>Thursday — Coached · 90 mins</h3>
+          <p>North Walls Park · 6–8pm. Skill Zone (30 mins) + Touch/Tag Game Zone (35 mins). Format: warm-up → skills → game → cool-down and debrief.</p>
+          <p class="card-note">June–July: non-contact only · August: Adapted Contact (RFU Reg 15.8.6)</p>
         </div>
         <div class="info-card">
           <div class="card-icon">🏃</div>
-          <h3>Self-Led A — Conditioning</h3>
-          <p>Solo · 45 mins · any day except Thursday. Trainers only, no equipment. Builds the aerobic engine, sprint capacity, and explosive power for the full-size U14 pitch.</p>
+          <h3>Self-Led A — Conditioning · 45 mins</h3>
+          <p>Solo · any day except Thursday. Trainers only, no equipment. Builds aerobic engine, sprint capacity, and explosive power for the full-size U14 pitch.</p>
           <p class="card-note">Phase 1: aerobic base · Phase 2: rugby intervals · Phase 3: speed &amp; agility</p>
         </div>
         <div class="info-card">
           <div class="card-icon">🏉</div>
-          <h3>Self-Led B — Skills</h3>
-          <p>Solo or pair · 45 mins · park or open space. Ball and training partner recommended. Develops the four DPP fundamental skills: Catch &amp; Pass, Carry, Tackle, Breakdown.</p>
+          <h3>Self-Led B — Skills · 45 mins</h3>
+          <p>Solo or pair · park or open space. Ball and partner recommended. Develops the four fundamental skills: Catch &amp; Pass, Carry, Tackle, Breakdown.</p>
           <p class="card-note">Phase 1: fundamentals · Phase 2: rugby-specific · Phase 3: match intensity</p>
         </div>
       </div>
 
-      <!-- Weekly schedule -->
+      <h3 class="subsection-title">Weekly schedule</h3>
       <div class="week-schedule">
-        <h3 class="subsection-title">Weekly schedule</h3>
         <div class="week-days">
           <div class="wday"><span class="wday-name">MON</span><span class="wday-content">Self-led A<br><em>Conditioning</em><br>45 mins</span></div>
           <div class="wday"><span class="wday-name">TUE</span><span class="wday-content wday-rest">Rest or active recovery</span></div>
           <div class="wday"><span class="wday-name">WED</span><span class="wday-content">Self-led B<br><em>Skills</em><br>45 mins</span></div>
-          <div class="wday wday--thu"><span class="wday-name">THU</span><span class="wday-content"><strong>Coached session</strong><br>North Walls Park<br>90 mins</span></div>
+          <div class="wday wday--thu"><span class="wday-name">THU</span><span class="wday-content"><strong>Coached Session</strong><br>North Walls Park<br>6pm · 90 mins</span></div>
           <div class="wday"><span class="wday-name">FRI</span><span class="wday-content wday-rest">Rest</span></div>
           <div class="wday"><span class="wday-name">SAT</span><span class="wday-content wday-rest">Rest or light activity</span></div>
           <div class="wday"><span class="wday-name">SUN</span><span class="wday-content wday-rest">Rest</span></div>
         </div>
-        <p class="week-note">Monday and Wednesday sessions can be swapped. Keep a rest day before and after Thursday where possible.</p>
       </div>
 
-      <!-- Phase timeline -->
       <h3 class="subsection-title">Programme phases</h3>
       <div class="timeline-phases">
         <div class="phase phase--1">
@@ -214,15 +247,14 @@
           <ul class="phase-list">
             <li>Contact Reintroduction</li>
             <li>Full Skills Under Pressure</li>
-            <li>DPP Simulation Trial — 28 Aug</li>
+            <li>End of Summer Review — 28 Aug</li>
           </ul>
           <div class="phase-badge phase-badge--amber">Adapted contact from 1 Aug</div>
         </div>
       </div>
 
-      <!-- Thursday dates -->
       <div class="dates-grid-wrapper">
-        <h3 class="subsection-title">All 11 Thursday session dates</h3>
+        <h3 class="subsection-title">All Thursday session dates</h3>
         <div class="dates-grid">
           <div class="date-pill">Thu 19 Jun</div>
           <div class="date-pill">Thu 26 Jun</div>
@@ -234,135 +266,266 @@
           <div class="date-pill">Thu 7 Aug</div>
           <div class="date-pill">Thu 14 Aug</div>
           <div class="date-pill">Thu 21 Aug</div>
-          <div class="date-pill date-pill--highlight">Thu 28 Aug · Trial match</div>
-        </div>
-      </div>
-
-      <!-- Session detail accordion -->
-      <h3 class="subsection-title">Thursday session detail</h3>
-      <p class="section-intro" style="margin-bottom:1.5rem">Format every week: 10 min warm-up · 30 min Skill Zone · 35 min Touch/Tag Game Zone · 15 min cool-down &amp; debrief</p>
-
-      <div class="sessions-grid">
-        <div class="session-card">
-          <div class="session-date">19 Jun · Session 1</div>
-          <div class="session-title">Catch &amp; Pass — Pillar 1</div>
-          <ul>
-            <li><strong>Skill Zone:</strong> Passing pairs stationary → moving → game-speed, both hands. 3-man channel at pace. Footwork grid: direction change, cuts, acceleration.</li>
-            <li><strong>Touch/Tag:</strong> Must complete 3 passes before touching down. Decision-making under play, not just drills.</li>
-            <li><strong>Key habit:</strong> Always lead the receiver. Always follow through.</li>
-          </ul>
-        </div>
-        <div class="session-card">
-          <div class="session-date">26 Jun · Session 2</div>
-          <div class="session-title">Carry &amp; Evasion — Pillar 2</div>
-          <ul>
-            <li><strong>Skill Zone:</strong> Gate running — body lean and line-running. 1v0 step, swerve, dummy at pace. Ball security: two-handed carry, never one-handed when tagged.</li>
-            <li><strong>Touch/Tag:</strong> Ball carrier must beat one 'touch' before passing. Forces carrying decisions, not just quick offloads.</li>
-            <li><strong>Key habit:</strong> Run at defenders. Make them make a decision.</li>
-          </ul>
-        </div>
-        <div class="session-card">
-          <div class="session-date">3 Jul · Session 3</div>
-          <div class="session-title">Shape in Attack — Game Understanding</div>
-          <ul>
-            <li><strong>Skill Zone:</strong> 2v1 — carrier commits, passes to support. 3v2 — find the space. Width: stay in lanes, no bunching. Cue: read defender's hips, not their feet.</li>
-            <li><strong>Touch/Tag:</strong> Structured phases — must complete 3 phases before scoring. Shape, calls, communication coached throughout.</li>
-            <li><strong>Key habit:</strong> Call your name loudly when you want the ball.</li>
-          </ul>
-        </div>
-        <div class="session-card">
-          <div class="session-date">10 Jul · Session 4</div>
-          <div class="session-title">Defence &amp; Line Speed — Game Understanding</div>
-          <ul>
-            <li><strong>Skill Zone:</strong> Defensive line — flat, step up on touch, verbal calls. Blitz vs drift: read carrier's hips, communicate the choice. 1v1 jockey footwork.</li>
-            <li><strong>Touch/Tag:</strong> Defensive scoring — bonus point for 3 consecutive stops. Creates real defensive intensity and communication habits.</li>
-            <li><strong>Key habit:</strong> Set personal communication targets every session.</li>
-          </ul>
-        </div>
-        <div class="session-card">
-          <div class="session-date">17 Jul · Session 5</div>
-          <div class="session-title">Set Piece Shape (Non-Contact)</div>
-          <ul>
-            <li><strong>Skill Zone:</strong> Lineout alignment, calling, straight throw (hookers). 8-man scrum formation, CBS sequence, #8 pick-up — movement reps, no contact. Scrum-half decision tree: pass, pick, run, box kick.</li>
-            <li><strong>Touch/Tag:</strong> All restarts via lineout free pass or scrum tap. Must exit own half to score.</li>
-            <li><strong>Key habit:</strong> Backs 10m back from the lineout. Every time, automatically.</li>
-          </ul>
-        </div>
-        <div class="session-card">
-          <div class="session-date">24 Jul · Session 6</div>
-          <div class="session-title">Kicking Game — Game Understanding</div>
-          <ul>
-            <li><strong>Skill Zone:</strong> Punt and box kick (9s &amp; 10s). Kick-chase pairs. Chip/grubber for backs. Kick receipt: full-back positioning under the ball, 'mark' call.</li>
-            <li><strong>Touch/Tag:</strong> Kicking permitted. Bonus point for kick-and-chase that prevents a restart.</li>
-            <li><strong>Key habit:</strong> Kick with a purpose — territory or pressure, not to get rid of it.</li>
-          </ul>
-        </div>
-        <div class="session-card">
-          <div class="session-date">31 Jul · Session 7</div>
-          <div class="session-title">Breakdown Technique (Bags/Pads)</div>
-          <ul>
-            <li><strong>Skill Zone:</strong> Ball presentation on bags — two hands, away from body. Ruck entry: low hips, bind, drive. Jackal: timing, legal body position. All on pads.</li>
-            <li><strong>Touch/Tag:</strong> After a touch, carrier presents — support arrives. Defenders respect simulated ruck. Breakdown reads without contact.</li>
-            <li><strong>Key habit:</strong> The arriving player always makes the picture better — not worse.</li>
-          </ul>
-        </div>
-        <div class="session-card">
-          <div class="session-date">7 Aug · Session 8</div>
-          <div class="session-title">Tackle Technique (Pads) + Contact Prep</div>
-          <ul>
-            <li><strong>Skill Zone:</strong> Tackle footwork on pads — close space, low position, drive through hips. Head to side, below armpits, wrap and drive. From 1 Aug: adapted contact permitted.</li>
-            <li><strong>Touch/Tag:</strong> Players call decisions aloud — 'ruck', 'mine', 'yours'. Final non-contact game. Verbal habit-building.</li>
-            <li><strong>Key habit:</strong> Technique first, speed second. DPP assessors look at technique above everything.</li>
-          </ul>
-        </div>
-        <div class="session-card session-card--contact">
-          <div class="session-date">14 Aug · Session 9</div>
-          <div class="session-title">Contact Reintroduction</div>
-          <ul>
-            <li><strong>Skill Zone:</strong> Tackle technique reintroduced — bag work, then live low-speed contact. Correct technique first, speed second. Head to side, below armpits, wrap and drive.</li>
-            <li><strong>Game Zone:</strong> Touch/tag rules for most of game — last 15 mins introduce live tackles. No scrums yet. Lineout free pass restart.</li>
-            <li>RFU Activate warm-up used. Contact technique observed — any welfare concerns addressed immediately.</li>
-          </ul>
-        </div>
-        <div class="session-card session-card--contact">
-          <div class="session-date">21 Aug · Session 10</div>
-          <div class="session-title">Full Skills Under Pressure</div>
-          <ul>
-            <li><strong>Skill Zone:</strong> Full DPP skill circuit — Catch &amp; Pass at pace, carry through contact (bags + live), breakdown competition (2v1 ruck), tackle technique.</li>
-            <li><strong>Adapted game:</strong> Live tackles throughout. No contested scrums — lineout or tap restart. Full-pitch adapted game. Game Understanding and Behaviours assessed.</li>
-            <li>Closest to a September match. Players identify what they feel confident about.</li>
-          </ul>
-        </div>
-        <div class="session-card session-card--trial">
-          <div class="session-date">28 Aug · Session 11</div>
-          <div class="session-title">DPP Simulation — Internal Trial</div>
-          <ul>
-            <li>Pre-session: team sheet shared. Players briefed on positional roles. Coaches observe — do not direct.</li>
-            <li>Skill Zone (20 mins): individual warm-up with ball. Each player demonstrates Catch &amp; Pass, carrying line, and tackle approach.</li>
-            <li>Adapted trial (40 mins): 2 × 20-min halves. Live tackle, lineout restarts, tap from scrum base. Coaches observe all four DPP pillars.</li>
-            <li><strong>Post-match:</strong> Individual feedback. DPP nomination candidates confirmed. Families invited to speak with the coaching team.</li>
-          </ul>
+          <div class="date-pill date-pill--highlight">Thu 28 Aug · End of summer review</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- U14 RULES -->
-  <section class="section section--light" id="rules">
+  <!-- ── OUR PLAYING SYSTEM ──────────────────────────────────────────────── -->
+  <section class="section section--light" id="system">
     <div class="container">
+
       <div class="section-header">
-        <p class="section-eyebrow">RFU Regulation 15 · Appendices 7 &amp; 8 · 2025–26</p>
-        <h2 class="section-title">Moving Up to U14</h2>
-        <p class="section-intro">Everything players and parents need to know about what changes. Based on official RFU Regulation 15, effective 1 August 2025.</p>
+        <p class="section-eyebrow">Our playing approach</p>
+        <h2 class="section-title">The 1-3-3-1 System &amp; Diamond Formation</h2>
+        <p class="section-intro">This season Winchester RFC U14s play a structured 1-3-3-1 system, executed through the diamond formation. This is not just a shape — it is a philosophy about how we use space, how our sub-units interact, and how every player understands their role in both attack and defence.</p>
       </div>
 
-      <h3 class="subsection-title">The five biggest changes</h3>
+      <!-- What is 1-3-3-1 -->
+      <div class="system-intro-grid">
+        <div class="system-explain">
+          <h3>What is the 1-3-3-1?</h3>
+          <p>The 1-3-3-1 is a way of structuring the team around four zones — with one player at the base (typically the #9), three forwards as a tight attacking pod, three backs as a wide attacking line, and one player at the apex (typically the fullback or #10 as a pivot). The diamond formation is the shape this creates across the width of the pitch.</p>
+          <p>At its core, the system is about <strong>creating and attacking space intelligently</strong>. Rather than running in straight lines or playing random offloads, every player has a defined starting position, a primary job, and a support responsibility.</p>
+          <h3>Why this system?</h3>
+          <p>At U14 the pitch becomes full-size. There is far more space — but only if you have the structure to find it and use it. The 1-3-3-1 gives players a framework to make decisions quickly and correctly: where should I be, what does the picture tell me, and what should I do next.</p>
+          <p>It is also a system that works in both attack and defence, meaning the team's shape in possession and out of possession mirrors each other. Players always know what to do and where to go — the game becomes readable.</p>
+        </div>
+        <div class="diamond-visual" aria-label="Diamond formation diagram">
+          <div class="dv-pitch">
+            <div class="dv-title">THE DIAMOND</div>
+            <div class="dv-row dv-row--1">
+              <div class="dv-node dv-node--apex">
+                <span class="dv-num">15</span>
+                <span class="dv-label">APEX<br>Full-back</span>
+              </div>
+            </div>
+            <div class="dv-row dv-row--3">
+              <div class="dv-node dv-node--wide">
+                <span class="dv-num">11</span>
+                <span class="dv-label">L Wing</span>
+              </div>
+              <div class="dv-node dv-node--mid">
+                <span class="dv-num">10</span>
+                <span class="dv-label">10 pivot</span>
+              </div>
+              <div class="dv-node dv-node--wide">
+                <span class="dv-num">14</span>
+                <span class="dv-label">R Wing</span>
+              </div>
+            </div>
+            <div class="dv-row dv-row--3">
+              <div class="dv-node dv-node--mid">
+                <span class="dv-num">13</span>
+                <span class="dv-label">Outside<br>Centre</span>
+              </div>
+              <div class="dv-node dv-node--mid">
+                <span class="dv-num">12</span>
+                <span class="dv-label">Inside<br>Centre</span>
+              </div>
+              <div class="dv-node dv-node--mid">
+                <span class="dv-num">8</span>
+                <span class="dv-label">Pod lead</span>
+              </div>
+            </div>
+            <div class="dv-row dv-row--1">
+              <div class="dv-node dv-node--base">
+                <span class="dv-num">9</span>
+                <span class="dv-label">BASE<br>Scrum-half</span>
+              </div>
+            </div>
+            <div class="dv-set-piece">
+              <span>↑ Set piece ↑</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phases of play -->
+      <h3 class="subsection-title">Phases of play — how the system works</h3>
+      <div class="phases-system">
+
+        <div class="sys-phase">
+          <div class="sp-header sp-header--1">
+            <span class="sp-num">PHASE 1</span>
+            <span class="sp-name">Set Piece to First Contact</span>
+          </div>
+          <div class="sp-body">
+            <p><strong>Trigger:</strong> Scrum or lineout won.</p>
+            <p><strong>Attack:</strong> The #9 is the base of the diamond. The forward pod (8, 6, 7) drives forward in a tight channel. The #10 holds depth to pivot and direct. The back line (12, 13) aligns flat and wide to threaten the edge immediately.</p>
+            <p><strong>Objective:</strong> Go forward. Win the collision or create a 2v1 off the set piece before the defence can reorganise. The forward pod creates the go-forward platform; the backs read the picture and decide width or carry.</p>
+            <p><strong>Key trigger:</strong> If the forward pod wins the collision and goes past the gain line — backs attack the width immediately. If the collision is held — 9 recycles, 10 resets the shape.</p>
+          </div>
+        </div>
+
+        <div class="sys-phase">
+          <div class="sp-header sp-header--2">
+            <span class="sp-num">PHASE 2</span>
+            <span class="sp-name">Multi-Phase Continuity</span>
+          </div>
+          <div class="sp-body">
+            <p><strong>Trigger:</strong> Ball retained after first contact. Ruck secured.</p>
+            <p><strong>Attack:</strong> The 9 picks the fastest ball delivery option. The 10 stands flat or moves closer to act as a second receiver option. 12 and 13 slide to the wider channel. The back three (11, 14, 15) hold width — they are the space exploiters. The forward pod reshapes — one player at the ruck to secure, two reset into the pod ahead of the next carrier.</p>
+            <p><strong>Objective:</strong> Create a numbers advantage — find the 2v1 or 3v2 through the diamond's width before the defence gets set. If the defence blitzes, kick into the space behind. If they drift, attack the short side. Read first, react second.</p>
+            <p><strong>Key habit:</strong> Every player after a ruck must ask — am I the next carrier, the next support, or the width option? The system only works if everyone is moving with purpose.</p>
+          </div>
+        </div>
+
+        <div class="sys-phase">
+          <div class="sp-header sp-header--3">
+            <span class="sp-num">PHASE 3</span>
+            <span class="sp-name">The Kicking Game — Zone Decisions</span>
+          </div>
+          <div class="sp-body">
+            <p><strong>When to kick:</strong> The kicking game is the diamond's long-range weapon. Zone-based decision-making applies — not every position kicks, and not every situation calls for a kick.</p>
+            <div class="kick-zones">
+              <div class="kz"><span class="kz-zone">Own 22</span><span class="kz-rule">Kick for territory. Long kick, high and straight. Relieve pressure — don't try to play.</span></div>
+              <div class="kz"><span class="kz-zone">22–50m</span><span class="kz-rule">Kick to contest. Box kick, cross-field, or grubber behind the defensive line. Create a 50/50 contest.</span></div>
+              <div class="kz"><span class="kz-zone">Opp 22</span><span class="kz-rule">Keep the ball. Attack with width. Kicking in the opposition 22 surrenders territory already won.</span></div>
+            </div>
+            <p><strong>The back three as a kicking unit:</strong> 15 organises the kick receipt. 11 and 14 chase every kick. The kicker (usually 9 or 10) communicates the kick type before executing. No surprise kicks — the whole back three must know the plan.</p>
+          </div>
+        </div>
+
+        <div class="sys-phase">
+          <div class="sp-header sp-header--4">
+            <span class="sp-num">DEFENCE</span>
+            <span class="sp-name">Defensive Shape — Mirror the Diamond</span>
+          </div>
+          <div class="sp-body">
+            <p><strong>Principle:</strong> The defensive diamond mirrors the attacking diamond. Every player has the same structural responsibility in and out of possession.</p>
+            <p><strong>Line speed:</strong> The defensive line moves up as one unit. 10 calls the line — flat or deep, blitz or drift — based on the picture in front of them. All players respond to the call simultaneously. No individuals — the line is only as fast as its slowest mover.</p>
+            <p><strong>Blitz:</strong> Used when the opposition has limited space and their #9 is slow. All 7 backs step up aggressively on the snap. The #10 calls "BLITZ" before the ball leaves the ruck. The forward pod covers any pick and go from the base.</p>
+            <p><strong>Drift:</strong> Used in open field with wide ball. Each defender marks one man and drifts out. No one man-marks across to the next defender until the carrier has committed their pass. One-out passes are the drift's strength — but wide overlaps are its weakness.</p>
+            <p><strong>Guard and post:</strong> After every ruck, one forward covers the base of the ruck (post) — protecting against the #8 pick-up or scrum-half snipe. The second forward covers one channel out from post (guard). The third forward joins the defensive line outside the posts.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sub-units -->
+      <h3 class="subsection-title" id="subunits">Sub-Units — How We Build the Team</h3>
+      <p style="color:#666;font-size:1rem;margin-bottom:2rem;max-width:680px">The 1-3-3-1 system is built on five sub-units that work together. Every player belongs to a sub-unit — and every sub-unit has a primary job. Understanding your sub-unit is as important as understanding your individual position.</p>
+
+      <div class="subunits-grid">
+
+        <div class="subunit-card">
+          <div class="su-header su-header--f5">
+            <span class="su-nums">1, 2, 3, 4, 5</span>
+            <span class="su-name">FRONT FIVE</span>
+          </div>
+          <div class="su-body">
+            <p class="su-role">The engine room. The platform builders. Everything starts here.</p>
+            <h4>Primary job</h4>
+            <p>Win the set piece. Go forward. Secure the ruck. Provide the go-forward platform from which the backs launch. If the Front Five does not function, the system does not function.</p>
+            <h4>Key responsibilities</h4>
+            <ul>
+              <li>Props (1, 3): contested scrum technique, binding, driving. Hip height below shoulder height at all times. Front row must move as one unit.</li>
+              <li>Hooker (2): accurate lineout throw. Hook in scrums. Highly mobile — a modern hooker is a ball-carrying threat around the fringes.</li>
+              <li>Locks (4, 5): scrum engine — normal binding now permitted. Lineout callers and jumpers. The heartbeat of the pack.</li>
+              <li>All five: arrive at every ruck before the defence. Secure the ball, drive through, create the platform. Width is the backs' job — go-forward is yours.</li>
+            </ul>
+            <div class="su-focus"><strong>Season development focus:</strong> Set piece cohesion. Ruck arrival and security. Mobility — get to the breakdown faster than the opposition.</div>
+          </div>
+        </div>
+
+        <div class="subunit-card">
+          <div class="su-header su-header--br">
+            <span class="su-nums">6, 7, 8</span>
+            <span class="su-name">BACK ROW</span>
+          </div>
+          <div class="su-body">
+            <p class="su-role">The connectors. Attack and defend. Bridge the front five and the backs.</p>
+            <h4>Primary job</h4>
+            <p>Drive the forward pod in attack. Contest every breakdown in defence. Cover the field. The back row is the most physically demanding sub-unit — you must be everywhere.</p>
+            <h4>Key responsibilities</h4>
+            <ul>
+              <li>Number 8: leads the forward pod in attack. Can now pick up from the base of the scrum and run. Primary carrier. Works in close co-operation with 6 and 7 at the breakdown. Apex predator.</li>
+              <li>Flankers (6, 7): defined breakdown roles — one secures the ruck, one looks to jackal or carry. Poaching, disrupting, tackling across the field. At the heart of the pod system.</li>
+              <li>All three: guard/post defensive role at every ruck. Pod organisation in attack. Set piece platform for starter plays.</li>
+            </ul>
+            <div class="su-focus"><strong>Season development focus:</strong> Ruck compete — jackal technique, legal body position. Pod cohesion — know when to carry, when to support. Communication with 9 at every breakdown.</div>
+          </div>
+        </div>
+
+        <div class="subunit-card">
+          <div class="su-header su-header--hb">
+            <span class="su-nums">9, 10</span>
+            <span class="su-name">HALF BACKS</span>
+          </div>
+          <div class="su-body">
+            <p class="su-role">The decision-makers. The directors. The game runs through this sub-unit.</p>
+            <h4>Primary job</h4>
+            <p>Control the tempo and shape of play. The #9 is the base of the diamond. The #10 is the pivot — they read the picture and choose the play. Both must be communicating at all times.</p>
+            <h4>Key responsibilities</h4>
+            <ul>
+              <li>Scrum-half (9): Vocal. Very vocal. Talking all the time. Working in close co-operation with 8 and 10. Sets the tempo. Can now box kick from scrums and lineouts. Pass, pick, run, or kick — but always decide quickly.</li>
+              <li>Fly-half (10): Full portfolio of attacking options. Kick, pass, carry/run. Dictates use of starter plays from set piece. In the 1-3-3-1 the 10 is the pivot — the system's brain. Calling line speed in defence.</li>
+              <li>Both: must read the defensive picture together and communicate the play option before it happens.</li>
+            </ul>
+            <div class="su-focus"><strong>Season development focus:</strong> Communication — be loud, be clear, be early. Decision speed — the defence moves on the ball, so decisions must be ahead of the defence. Kicking game — when, where, and what type.</div>
+          </div>
+        </div>
+
+        <div class="subunit-card">
+          <div class="su-header su-header--ce">
+            <span class="su-nums">12, 13</span>
+            <span class="su-name">CENTRES</span>
+          </div>
+          <div class="su-body">
+            <p class="su-role">The midfield engine. Attack the space. Lead the defensive line.</p>
+            <h4>Primary job</h4>
+            <p>In attack: exploit the space between the forward pod and the wide channels. In defence: lead the line, set the tempo, communicate to the wings.</p>
+            <h4>Key responsibilities</h4>
+            <ul>
+              <li>Inside centre (12): closest to the forward pod. Primary defensive responsibility — must track the crash ball and the 10's run. In attack, the first option off the #10's pass — flat, hard, and fast.</li>
+              <li>Outside centre (13): the edge exploiter. Reads whether the space is inside or outside the last defender. Communicates to the wing and full-back. Line "shooters" is an option — stepping up to hit the ball at pace and create a mismatch.</li>
+              <li>Both: defensive line speed as a weapon. Depth management — knowing when to go flat and when to hold depth. Tie in with players either side.</li>
+            </ul>
+            <div class="su-focus"><strong>Season development focus:</strong> Midfield penetration — commit the defender, create the overlap. Defensive communication — call the line, don't wait for the 10 to call for you. Support lines either side of strike runners.</div>
+          </div>
+        </div>
+
+        <div class="subunit-card">
+          <div class="su-header su-header--b3">
+            <span class="su-nums">11, 14, 15</span>
+            <span class="su-name">BACK THREE</span>
+          </div>
+          <div class="su-body">
+            <p class="su-role">The space exploiters. The width. The last line of defence and the first line of counter-attack.</p>
+            <h4>Primary job</h4>
+            <p>In attack: finish and exploit. Hold width. Be available for the wide ball and the kick receipt. In defence: cover the back field. Communicate field position. Operate as a pendulum unit.</p>
+            <h4>Key responsibilities</h4>
+            <ul>
+              <li>Wings (11, 14): Full-size pitch means far more ground to cover. Kick chase — every kick, sprint hard, contest the ball. Kick return and counter-attack. Defensive red zone kicking as an option. Trail lines in attack — be available after the carry.</li>
+              <li>Full-back (15): the organiser. Receives kicks in a full-size game — high ball, timing, calling. Counter-attack from deep. Kicking out of hand under pressure. Covering kicks behind the line. Links the wings and sets the position of the pendulum.</li>
+              <li>All three: operate as one unit. The pendulum approach — as the ball goes right, the left wing tucks in as cover, the right wing goes wide, the 15 positions to support either side. This sub-unit rotates together.</li>
+            </ul>
+            <div class="su-focus"><strong>Season development focus:</strong> Kick-receipt technique. The pendulum — practise moving as a unit in training. Counter-attack reads — when to run, when to kick back. Communication — the 15 must be the loudest voice in the back field.</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── U14 RULES ────────────────────────────────────────────────────────── -->
+  <section class="section section--dark" id="rules">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">RFU Regulation 15 · 2025–26</p>
+        <h2 class="section-title">Moving Up to U14</h2>
+        <p class="section-intro">The five biggest changes from U13 to U14, and a full rule comparison. Based on RFU Regulation 15, Appendices 7 &amp; 8, effective 1 August 2025.</p>
+      </div>
+
       <div class="changes-grid">
-        <div class="change-card"><div class="change-num">1</div><h4>15-a-side</h4><p>Up from 13-a-side. Two extra players means more space to cover and more positional responsibility for everyone.</p></div>
-        <div class="change-card"><div class="change-num">2</div><h4>Full-size pitch</h4><p>100m × 70m (was 90m × 60m). +11% longer, +17% wider, +50% more ground per player. Fitness matters from day one.</p></div>
-        <div class="change-card"><div class="change-num">3</div><h4>8-man scrum</h4><p>Full 3-4-1 formation. Normal binding now permitted. Number 8 can pick up from the base and run — a major new option.</p></div>
-        <div class="change-card"><div class="change-num">4</div><h4>Lineouts begin</h4><p>U13 has no lineouts — touch restarts with a free pass. U14 introduces proper uncontested lineouts. <strong>No lifting until U15.</strong></p></div>
-        <div class="change-card"><div class="change-num">5</div><h4>Box kicks &amp; drop goals</h4><p>The full kicking game opens up. Box kicks, drop goals, and conversions are all introduced at U14 for the first time.</p></div>
+        <div class="change-card"><div class="change-num">1</div><h4>15-a-side</h4><p>Up from 13-a-side. Two extra players, more space, more positional responsibility for everyone.</p></div>
+        <div class="change-card"><div class="change-num">2</div><h4>Full-size pitch</h4><p>100m × 70m (was 90m × 60m). +50% more ground per player. Fitness matters from day one.</p></div>
+        <div class="change-card"><div class="change-num">3</div><h4>8-man scrum</h4><p>Full 3-4-1 formation. #8 can pick up and run. Scrum-half can now box kick from the base.</p></div>
+        <div class="change-card"><div class="change-num">4</div><h4>Lineouts begin</h4><p>U13 has no lineouts — touch restarts with a free pass. At U14 uncontested lineouts begin. <strong>No lifting until U15.</strong></p></div>
+        <div class="change-card"><div class="change-num">5</div><h4>Box kicks &amp; drop goals</h4><p>The full kicking game opens up. Box kicks, drop goals, and conversions are all introduced.</p></div>
       </div>
 
       <h3 class="subsection-title">Full rule comparison</h3>
@@ -375,125 +538,78 @@
             <tr><td>Players per side</td><td>13</td><td class="col-u14">15</td></tr>
             <tr><td>Pitch size</td><td>90m × 60m</td><td class="col-u14">100m × 70m (full size)</td></tr>
             <tr><td>Match duration</td><td>25 mins per half</td><td class="col-u14">25 mins per half (unchanged)</td></tr>
-            <tr><td>Ball size</td><td>Size 4</td><td class="col-u14">Size 4 (unchanged until U15)</td></tr>
+            <tr><td>Ball size</td><td>Size 4</td><td class="col-u14">Size 4 (unchanged)</td></tr>
             <tr><td>Scrum</td><td>6 players · 3-2-1 · #8 cannot pick up</td><td class="col-u14">8 players · 3-4-1 · #8 can pick up and run</td></tr>
-            <tr><td>Lineout</td><td>No lineouts — free pass from touch</td><td class="col-u14">Uncontested lineout · no lifting</td></tr>
-            <tr><td>Kicking</td><td>Open play kicking · no box kicks or DGs</td><td class="col-u14">Box kicks, drop goals and conversions introduced</td></tr>
+            <tr><td>Lineout</td><td>No lineouts — free pass from touch</td><td class="col-u14">Uncontested lineout · no lifting permitted</td></tr>
+            <tr><td>Kicking</td><td>Open play kicking · no box kicks or drop goals</td><td class="col-u14">Box kicks, drop goals, and conversions introduced</td></tr>
             <tr><td>Tackle height</td><td>Below armpits</td><td class="col-u14">Below armpits (unchanged)</td></tr>
             <tr><td>Penalties</td><td>Free kicks for most offences</td><td class="col-u14">Penalty kicks now awarded</td></tr>
-            <tr><td>Conversions</td><td>No conversions</td><td class="col-u14">Place kick or drop kick after a try — new</td></tr>
+            <tr><td>Conversions</td><td>No conversions</td><td class="col-u14">Place kick or drop kick after a try — new at U14</td></tr>
             <tr><td>Sin bin</td><td>5 minutes</td><td class="col-u14">5 minutes (unchanged)</td></tr>
             <tr><td>Match ends if…</td><td>Try difference &gt; 6</td><td class="col-u14">Points difference &gt; 50</td></tr>
             <tr><td>Half-game rule</td><td>Mandatory</td><td class="col-u14">Mandatory (unchanged)</td></tr>
           </tbody>
         </table>
       </div>
-
       <div class="callout callout--warning">
         <div class="callout-icon">⚠</div>
-        <div class="callout-content"><strong>No lifting at U14.</strong> A common misconception is that lifting is introduced at U14. It is not. No lifting or supporting of any kind is permitted in lineouts until U15. Mandatory safety rule, RFU Regulation 15 Appendix 8.</div>
+        <div class="callout-content"><strong>No lifting at U14.</strong> No lifting or supporting of any kind is permitted in lineouts until U15. Mandatory safety rule — RFU Regulation 15 Appendix 8.</div>
       </div>
       <p class="source-note">Source: RFU Regulation 15, Appendices 7 &amp; 8 · <a href="https://www.englandrugby.com/run/rules-governance/rfu-rules-and-regulations/regulation-15-age-grade-rugby" target="_blank" rel="noopener">englandrugby.com</a></p>
     </div>
   </section>
 
-  <!-- POSITIONS -->
-  <section class="section section--dark" id="positions">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Positional guides</p>
-        <h2 class="section-title">What Changes By Position</h2>
-        <p class="section-intro">At U14 players start to learn true positional roles. Sub-units grow in importance. Here is what changes for each position — and what we will develop together.</p>
-      </div>
-
-      <h3 class="subsection-title">Forwards</h3>
-      <div class="pos-grid">
-        <div class="pos-card">
-          <div class="pos-num">1 &amp; 3</div>
-          <div class="pos-name">Props</div>
-          <p>Now in a full 8-man contested scrum. Front row binding and technique become critical. Outside hips supported by flankers. Hip height relative to shoulder height is a key learning point. Mobility is key — support play and getting to breakdowns are crucial.</p>
-        </div>
-        <div class="pos-card">
-          <div class="pos-num">2</div>
-          <div class="pos-name">Hooker</div>
-          <p>Leads the lineout throw for the first time — must develop a straight, accurate throw. Also hooks in contested scrums. The modern hooker is a hybrid role: highly mobile, a genuine ball-carrying threat across the park.</p>
-        </div>
-        <div class="pos-card">
-          <div class="pos-num">4 &amp; 5</div>
-          <div class="pos-name">Locks</div>
-          <p>Join the full 8-man scrum — normal binding now permitted. Lineout calling and positioning becomes a key role. The beating heart of the pack unit, the engine room behind how the pack operates.</p>
-        </div>
-        <div class="pos-card">
-          <div class="pos-num">6 &amp; 7</div>
-          <div class="pos-name">Flankers</div>
-          <p>Defined breakdown roles in ruck and maul. Lineout positioning. Support work off scrums becomes more structured. Poaching, disrupting, tackling — playing across the field. Works very closely with No.8. At the heart of the pod system.</p>
-        </div>
-        <div class="pos-card pos-card--highlight">
-          <div class="pos-num">8</div>
-          <div class="pos-name">Number 8</div>
-          <p>Can now pick up from the base of the scrum and run — a major new option that didn't exist at U13. Works closely with flankers to disrupt breakdowns, control defensive lines around the ruck, and ensure the pack unit is performing. <strong>Primary ball carrier. Apex predator.</strong></p>
-        </div>
-      </div>
-
-      <div class="callout callout--amber" style="margin-bottom:2.5rem">
-        <div class="callout-icon">🔑</div>
-        <div class="callout-content">
-          <strong>Forwards key development points:</strong> Sub-unit and pack cohesion · Ruck defence and maul defence · Guard/post defensive role · Pod organisation in attack · Set piece platform for starter plays · Mobility across the field.
-        </div>
-      </div>
-
-      <h3 class="subsection-title">Backs</h3>
-      <div class="pos-grid">
-        <div class="pos-card pos-card--highlight">
-          <div class="pos-num">9</div>
-          <div class="pos-name">Scrum-half</div>
-          <p>Vocal. Very vocal. Needs to be talking all the time — working in close co-operation with his No.8 and No.10. Sets the tempo of the game. Can now box kick from scrum and lineout. Pass, pick, run, or kick. More responsibility at the breakdown. <strong>Can be the most influential player on the field.</strong></p>
-        </div>
-        <div class="pos-card">
-          <div class="pos-num">10</div>
-          <div class="pos-name">Fly-half</div>
-          <p>Full portfolio of attacking options now available: kick, pass, carry/run. Running the game in close co-operation with No.9. Box kicks, up-and-unders, cross-field kicks, drop goals all permitted. Dictates use of starter plays from set piece — at the heart of driving shape into the attack.</p>
-        </div>
-        <div class="pos-card">
-          <div class="pos-num">11 &amp; 14</div>
-          <div class="pos-name">Wings</div>
-          <p>Full-size pitch means far more ground to cover. Kick chase, kick return, and counter-attack become key skills. Defensive red zone kicking from hand now an option. Key objective: operate as a back three with the full-back in what is known as a pendulum approach.</p>
-        </div>
-        <div class="pos-card">
-          <div class="pos-num">12 &amp; 13</div>
-          <div class="pos-name">Centres</div>
-          <p>Larger pitch creates more space to exploit. Defensive line speed and depth management become more important. Critical that centres lead defensive lines and tie in with players either side. Line "shooters" is a defensive option. Midfield penetration and support lines on either side of strike runners is a key development point.</p>
-        </div>
-        <div class="pos-card">
-          <div class="pos-num">15</div>
-          <div class="pos-name">Full-back</div>
-          <p>Receiving kicks in a full-size game is a new challenge. Counter-attack from deep, kicking out of hand, covering kicks behind the line. Linking effectively with wingers and covering each other's territory. At the core of the pendulum sub-unit — the Back 3 — and must develop as the last line of defence.</p>
-        </div>
-      </div>
-
-      <div class="callout callout--amber">
-        <div class="callout-icon">🔑</div>
-        <div class="callout-content">
-          <strong>Backs key development points:</strong> Sub-unit and backline cohesion · Shape in attack · Diamond formation · Multi-phase · Defensive line speed as a weapon · Play in the right zones · Kicking as a pressure relief and as a weapon. <em>All backs must be 10m back from lineouts until invited forward by the referee.</em>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WELFARE -->
+  <!-- ── PLAYER WELFARE ──────────────────────────────────────────────────── -->
   <section class="section section--light" id="welfare">
     <div class="container">
       <div class="section-header">
         <p class="section-eyebrow">Player welfare</p>
         <h2 class="section-title">Looking After Yourself</h2>
-        <p class="section-intro">It is critical that players start to understand the role they play in their own welfare. These are not suggestions — they are the non-negotiables of being a serious rugby player.</p>
+        <p class="section-intro">It is critical that players start to understand the role they play in their own welfare. Consistent habits around sleep, nutrition, hydration and recovery are as important as what you do on the pitch.</p>
       </div>
 
       <div class="welfare-grid">
+
         <div class="welfare-card welfare-card--major">
-          <h3>Warming Up — Non-Negotiable</h3>
+          <h3>🌙 Sleep — Your Most Powerful Recovery Tool</h3>
+          <p>Sleep is not rest. Sleep is when your body does its most important work — repairing muscle damage, consolidating the skills you practised, and releasing the hormones that drive growth and development.</p>
+          <div class="welfare-science">
+            <div class="ws-item">
+              <div class="ws-icon">🧬</div>
+              <div>
+                <strong>Growth hormone</strong>
+                <p>Up to 70% of the day's growth hormone is released during deep sleep — specifically in the first 2–3 hours of the night. This is the hormone responsible for muscle repair, bone development, and recovery from training. No sleep = no growth hormone = slower recovery and development.</p>
+              </div>
+            </div>
+            <div class="ws-item">
+              <div class="ws-icon">🧠</div>
+              <div>
+                <strong>Skill consolidation</strong>
+                <p>Every drill, passing technique, and movement pattern you practise is consolidated during REM sleep. The neural pathways that make skills feel automatic are built overnight. Players who practise and then sleep properly improve faster than those who practise without adequate sleep.</p>
+              </div>
+            </div>
+            <div class="ws-item">
+              <div class="ws-icon">💪</div>
+              <div>
+                <strong>Muscle repair</strong>
+                <p>Training causes microscopic damage to muscle fibres. Sleep — particularly deep sleep — triggers the repair and rebuilding process that makes muscles stronger. Without 8–9 hours, this process is incomplete. You train but don't adapt.</p>
+              </div>
+            </div>
+            <div class="ws-item">
+              <div class="ws-icon">😤</div>
+              <div>
+                <strong>Mental resilience</strong>
+                <p>Decision-making under pressure (tackle timing, reading the defensive line, calling in attack) deteriorates significantly with poor sleep. A player who slept 6 hours makes worse decisions under pressure than one who slept 9. It's not attitude — it's physiology.</p>
+              </div>
+            </div>
+          </div>
+          <div class="welfare-rule">Target: 8–9 hours per night. Non-negotiable throughout the programme. Sleep deficits from the week cannot be recovered at the weekend.</div>
+        </div>
+
+        <div class="welfare-card welfare-card--major">
+          <h3>🔥 Warm-Up — Non-Negotiable Before Every Session</h3>
           <p><strong>Cold muscles tear. Warm muscles bend.</strong> A 10-minute warm-up raises muscle temperature, increases blood flow, and prepares tendons and ligaments for explosive loads. At U14, your body is still developing — skipping the warm-up is the single biggest cause of avoidable injuries in junior rugby.</p>
-          <p>A proper warm-up also improves reaction time, sprint speed, and passing accuracy from the first minute of a session. Players who warm up properly perform better immediately — not just later.</p>
+          <p>A proper warm-up also improves reaction time, sprint speed, and passing accuracy from the very first minute of the session.</p>
           <div class="welfare-checklist">
             <strong>What good looks like (5–10 mins, every session):</strong>
             <ul>
@@ -501,147 +617,175 @@
               <li>Walking knee drives, lateral shuffles</li>
               <li>A-skips, bounding, change of direction</li>
               <li>Gentle jog building to strides</li>
-              <li>Thursday sessions use RFU Activate from Phase 3</li>
+              <li>Thursday sessions use RFU Activate</li>
             </ul>
           </div>
         </div>
 
-        <div class="welfare-card welfare-card--major">
-          <h3>Recovery — Where Adaptation Happens</h3>
-          <p><strong>Training breaks the body down. Recovery builds it back stronger.</strong> Muscles grow, aerobic fitness improves, and neural pathways sharpen during rest — not during the session. A warm-down signals the body to switch from "performance" mode to "repair" mode.</p>
+        <div class="welfare-card">
+          <h3>❄️ Recovery &amp; Cool-Down</h3>
+          <p><strong>Training breaks the body down. Recovery builds it back stronger.</strong> Muscles grow, fitness improves, and neural pathways sharpen during rest — not during the session. A warm-down signals the body to switch from performance mode to repair mode.</p>
           <div class="welfare-checklist">
-            <strong>Warm-down routine (5 mins after every session):</strong>
+            <strong>5 minutes after every session:</strong>
             <ul>
               <li>Easy jog or walk — 2 minutes</li>
               <li>Hip flexor stretch — 30s each side</li>
-              <li>Quad &amp; hamstring stretch — 30s each</li>
+              <li>Quad &amp; hamstring — 30s each</li>
               <li>Calf &amp; thoracic rotation — 30s each</li>
             </ul>
           </div>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:#555">Eat within 60 minutes of finishing a session — carbohydrates to restore energy, protein to repair muscle. This window matters.</p>
         </div>
 
         <div class="welfare-card">
-          <h3>Sleep</h3>
-          <p><strong>8–9 hours minimum per night.</strong> Growth hormone — responsible for muscle repair and development — is released primarily during deep sleep. No sleep shortcut exists. Sleep deficits cannot be recovered. This is the most powerful recovery tool available to a U14 player.</p>
-          <p class="welfare-rule">Aim for 8–9 hours. Every night. Non-negotiable.</p>
+          <h3>💧 Nutrition &amp; Hydration</h3>
+          <p>The body needs clean lean protein, complex carbohydrates, fibre, and healthy fats to support growth, recovery, and performance.</p>
+          <ul class="welfare-simple-list">
+            <li>If you feel thirsty, it's already too late — hydrate before training</li>
+            <li>Monitor urine colour as a hydration guide (pale yellow = good)</li>
+            <li>Getting hydration levels right takes time — everyone is different</li>
+            <li>Compound weights are not needed yet — bodyweight, stretching, and mobility are better at this age</li>
+            <li>Limit ultra-processed food and high-sugar drinks during the programme</li>
+          </ul>
+          <div class="welfare-rule">Food is fuel. Treat it that way.</div>
         </div>
 
         <div class="welfare-card">
-          <h3>Nutrition &amp; Hydration</h3>
-          <p>The body needs clean lean protein, complex carbs, fibre and healthy fats to support growth and recovery. Eat within 60 minutes of finishing a session — carbohydrates to restore energy, protein to repair muscle.</p>
-          <p>Hydration: if you feel thirsty, it's already too late. Monitor urine colour. Getting your hydration levels right takes time and attention — everyone has their own levels and you need to learn yours.</p>
-          <p class="welfare-rule">Compound weights not needed yet. Stretching, flexibility and mobilisation are preferable.</p>
+          <h3>🛑 Pain vs Effort</h3>
+          <p>There is a real difference between the discomfort of hard effort — lungs burning, legs heavy — and actual pain. If you feel sharp, persistent, or worsening pain:</p>
+          <ul class="welfare-simple-list">
+            <li>Stop immediately</li>
+            <li>Tell a parent and your coach</li>
+            <li>Do not train through it</li>
+          </ul>
+          <p>Never train on consecutive days if carrying an injury. A week off now beats missing the whole season. Rehabbing an injury correctly is always more important than training through it.</p>
+          <div class="welfare-rule">Limit contact sessions to once within any 48-hour period.</div>
         </div>
 
         <div class="welfare-card">
-          <h3>Pain vs Effort</h3>
-          <p>There is a difference between the discomfort of hard effort — lungs burning, legs heavy — and actual pain. If you feel sharp or persistent pain, <strong>stop immediately</strong>. Tell a parent and your coach.</p>
-          <p>Never train on consecutive days if carrying an injury. A week off now beats missing pre-season. Rehabbing an injury correctly is far more important than training through it.</p>
-          <p class="welfare-rule">Limit contact sessions to once within any 48-hour period.</p>
-        </div>
-
-        <div class="welfare-card">
-          <h3>For Parents</h3>
+          <h3>👪 For Parents</h3>
           <ul class="welfare-parent-list">
-            <li><strong>Half-game rule is mandatory</strong> — every player must play at least half of available time. Speak to the coach if this isn't happening.</li>
+            <li><strong>Half-game rule is mandatory</strong> — every player plays at least half of available time. Speak to the coach if this is not happening.</li>
             <li><strong>No lifting at U14</strong> — lineout lifting is only permitted from U15. Mandatory safety rule.</li>
             <li><strong>Scrums are closely managed</strong> — the 1.5m push limit is strictly enforced.</li>
             <li><strong>Match ends at 50-point difference</strong> — RFU rules protect players in mismatched fixtures.</li>
-            <li><strong>Medical info</strong> — please share any medical condition, injury history or welfare concern with the coaching team before the season starts.</li>
+            <li><strong>Medical info</strong> — share any medical condition, injury history or welfare concern with the coaching team before the season starts.</li>
           </ul>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CAMPS -->
+  <!-- ── CAMPS ────────────────────────────────────────────────────────────── -->
   <section class="section section--dark" id="camps">
     <div class="container">
       <div class="section-header">
-        <p class="section-eyebrow">Hampshire &amp; Dorset · Summer 2026</p>
+        <p class="section-eyebrow">Hampshire · August 2026</p>
         <h2 class="section-title">Summer Camps</h2>
-        <p class="section-intro">Six camps reviewed within reach of Winchester, ranked by Bath DPP pathway relevance. Only Millfield has confirmed 2026 dates — book now.</p>
+        <p class="section-intro">Two recommended camps this summer — both accessible from Winchester, both in August. Spaces are limited. Book early.</p>
       </div>
 
-      <div class="camp-featured">
-        <div class="camp-featured-badge">✓ CONFIRMED 2026 · BOOK NOW</div>
-        <div class="camp-featured-inner">
-          <div class="camp-featured-main">
-            <p class="camp-type">5-day day camp · Somerset</p>
-            <h3>Millfield Rugby Course</h3>
-            <p class="camp-dates">Monday 10 – Friday 14 August 2026 · 9am–4pm</p>
-            <div class="camp-meta-row">
-              <span>📍 Millfield School, Street, Somerset</span>
-              <span>👤 Ages 8–14, all abilities</span>
-              <span>💷 £290 per player</span>
-              <span>🚗 ~90 mins from Winchester</span>
-            </div>
-            <p class="camp-desc">Led by Freddie Gabbitass (former Bath Rugby Academy, Asst. Director of Rugby at Millfield). Expert coaching on world-class facilities. Age-specific training developing skills, tactics, fitness and game understanding.</p>
-          </div>
-          <div class="camp-featured-actions">
-            <div class="pathway-stars">
-              <div class="pw-label">Bath pathway</div>
-              <div class="pw-dots"><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--off"></span></div>
-              <div class="pw-text">Strong</div>
-            </div>
-            <a href="https://www.millfieldenterprises.com/courses-and-activities/rugby" target="_blank" rel="noopener" class="btn-primary">Book online →</a>
-          </div>
-        </div>
-      </div>
+      <div class="camps-featured-grid">
 
-      <h3 class="subsection-title">Bath Rugby camps — verify dates directly</h3>
-      <div class="camps-grid">
-        <div class="camp-card">
-          <div class="camp-card-top"><span class="camp-card-type">5-day residential</span><div class="pathway-stars pathway-stars--small"><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--on"></span><span class="pw-label-inline">Direct</span></div></div>
-          <h4>Bath Rugby Residential</h4>
-          <p class="camp-card-location">📍 Clayesmore School, Blandford, Dorset · ~50 min</p>
-          <p>The flagship Bath Rugby residential. Designed to replicate a week in the life of a professional rugby player. Coaches who run the Hampshire U14 DPP programme.</p>
-          <div class="camp-card-meta"><span>👤 Boys U13–U18</span><span>💷 ~£500</span></div>
-          <a href="https://www.bathrugby.com/community/residential-rugby-camps" target="_blank" rel="noopener" class="camp-link">Check dates at bathrugby.com →</a>
+        <!-- Bath Rugby at Walhampton -->
+        <div class="camp-card-full">
+          <div class="camp-card-full-header">
+            <span class="camp-card-full-type">5-day residential · Boys only</span>
+            <span class="camp-verify">⚠ Verify dates at bathrugby.com</span>
+          </div>
+          <h3>Bath Rugby Residential Camp</h3>
+          <p class="camp-card-full-sub">Walhampton School, Lymington, Hampshire</p>
+          <div class="camp-detail-grid">
+            <div class="camp-detail-row"><span class="cdr-label">📍 Location</span><span>Walhampton School, Lymington, Hampshire SO41 5ZG · Set in 100 acres of ancient woodland on the edge of the New Forest, near Lymington and the Isle of Wight.</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">🚗 Distance</span><span>Approximately 35 minutes from Winchester</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">📅 Dates</span><span>August 2026 — exact dates TBC. Check <a href="https://www.bathrugby.com/community/residential-rugby-camps" target="_blank" rel="noopener">bathrugby.com</a> for confirmation. This camp has run annually at Walhampton.</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">👤 Ages</span><span>Boys U13–U18 · All abilities</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">💷 Cost</span><span>Typically £450–£550 for 5 days — verify directly with Bath Rugby before booking</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">🏉 Format</span><span>Designed to replicate a week in the life of a professional rugby player. Rugby coaching, strength &amp; conditioning, skills development, and visits from Bath Rugby squad players. DBS-cleared, RFU-qualified Bath Rugby Community coaches throughout.</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">📞 Book</span><span><a href="https://www.bathrugby.com/community/residential-rugby-camps" target="_blank" rel="noopener">bathrugby.com/community/residential-rugby-camps</a></span></div>
+          </div>
         </div>
-        <div class="camp-card">
-          <div class="camp-card-top"><span class="camp-card-type">5-day residential</span><div class="pathway-stars pathway-stars--small"><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--on"></span><span class="pw-label-inline">Direct</span></div></div>
-          <h4>Bath Rugby Residential</h4>
-          <p class="camp-card-location">📍 Bournemouth Collegiate School, Dorset · ~60 min</p>
-          <p>Consistently sold out since launch. Most geographically accessible Bath residential for Hampshire families. Residential houses, pool, gym.</p>
-          <div class="camp-card-meta"><span>👤 Boys U13–U18</span><span>💷 ~£500</span></div>
-          <a href="https://www.bathrugby.com/community/residential-rugby-camps" target="_blank" rel="noopener" class="camp-link">Check dates at bathrugby.com →</a>
+
+        <!-- Embley School -->
+        <div class="camp-card-full camp-card-full--confirmed">
+          <div class="camp-card-full-header">
+            <span class="camp-card-full-type">3-day non-residential · Boys &amp; girls</span>
+            <span class="camp-confirmed">✓ Confirmed — book now</span>
+          </div>
+          <h3>Embley Sports Performance Camp — Rugby</h3>
+          <p class="camp-card-full-sub">Embley School, Romsey, Hampshire</p>
+          <div class="camp-detail-grid">
+            <div class="camp-detail-row"><span class="cdr-label">📍 Location</span><span>Embley School, Embley Park, Wellow, Romsey, Hampshire SO51 6ZE</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">🚗 Distance</span><span>Approximately 25 minutes from Winchester</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">📅 Dates</span><span>August 2026 — three days, 9am–3pm. Check <a href="https://embley.org.uk/sports-performance-camps" target="_blank" rel="noopener">embley.org.uk/sports-performance-camps</a> for confirmed dates and to book.</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">👤 Ages</span><span>Boys and girls currently in Years 7–9 (2025–26 academic year) · Club level</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">💷 Cost</span><span>To be confirmed — check Embley website. Lunch not included.</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">🏉 Format</span><span>Led by Embley's rugby coach Ben Turner. Elite skill development, tactical analysis, and strength &amp; conditioning. Position-specific coaching — players refine the technical skills most relevant to their role. Strong emphasis on game-based scenarios and decision-making under pressure. Includes tactical awareness sessions and a dedicated recovery and wellbeing session.</span></div>
+            <div class="camp-detail-row"><span class="cdr-label">📞 Book</span><span><a href="https://embley.org.uk/sports-performance-camps" target="_blank" rel="noopener">embley.org.uk/sports-performance-camps</a></span></div>
+          </div>
         </div>
-        <div class="camp-card">
-          <div class="camp-card-top"><span class="camp-card-type">5-day residential</span><div class="pathway-stars pathway-stars--small"><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--on"></span><span class="pw-label-inline">Direct</span></div></div>
-          <h4>Bath Rugby Residential</h4>
-          <p class="camp-card-location">📍 Warminster School, Wiltshire · ~55 min</p>
-          <p>Added due to demand overflow from Bournemouth. Good option if Bournemouth fills. Educational programme alongside on-pitch coaching.</p>
-          <div class="camp-card-meta"><span>👤 Boys &amp; girls U13–U18</span><span>💷 ~£500</span></div>
-          <a href="https://www.bathrugby.com/community/residential-rugby-camps" target="_blank" rel="noopener" class="camp-link">Check dates at bathrugby.com →</a>
-        </div>
-        <div class="camp-card">
-          <div class="camp-card-top"><span class="camp-card-type">3-day day camp</span><div class="pathway-stars pathway-stars--small"><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--on"></span><span class="pw-label-inline">Direct</span></div></div>
-          <h4>Bath Rugby Day Camps</h4>
-          <p class="camp-card-location">📍 Various Dorset clubs · 50–80 min</p>
-          <p>Day camps at Dorset clubs including North Dorset RFC and Wimborne RFC. Most affordable Bath Rugby-connected option. Venues published annually.</p>
-          <div class="camp-card-meta"><span>👤 U7–U14</span><span>💷 ~£90</span></div>
-          <a href="https://www.bathrugby.com/community/bath-rugby-camps" target="_blank" rel="noopener" class="camp-link">Check dates at bathrugby.com →</a>
-        </div>
-        <div class="camp-card">
-          <div class="camp-card-top"><span class="camp-card-type">5-day residential</span><div class="pathway-stars pathway-stars--small"><span class="pw-dot pw-dot--on"></span><span class="pw-dot pw-dot--off"></span><span class="pw-dot pw-dot--off"></span><span class="pw-label-inline">Indirect</span></div></div>
-          <h4>Exeter Chiefs Residential</h4>
-          <p class="camp-card-location">📍 Blundell's School, Tiverton, Devon · ~2 hrs</p>
-          <p>Well-established residential with excellent facilities — pool, evening activities, team building. Good Premiership coaching environment.</p>
-          <div class="camp-card-meta"><span>👤 U11–U16</span><span>💷 ~£500</span></div>
-          <a href="https://www.exeterchiefs.co.uk/community/residential-rugby-camp" target="_blank" rel="noopener" class="camp-link">Check dates at exeterchiefs.co.uk →</a>
-        </div>
+
       </div>
 
       <div class="callout callout--amber">
-        <div class="callout-icon">📧</div>
-        <div class="callout-content"><strong>Get ahead of the queue for Bath Rugby camps.</strong> Email Matt Lishman (Bath Rugby Junior Academy Lead, U14–U16) for early notification of 2026 dates and any Hampshire-specific sessions: <a href="mailto:Matt.Lishman@bathrugby.com" class="callout-link">Matt.Lishman@bathrugby.com</a></div>
+        <div class="callout-icon">💡</div>
+        <div class="callout-content">Both camps complement the Thursday training programme. They are optional but strongly encouraged — especially for players who want to accelerate their development before the season starts in September.</div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section section--light" id="contact">
+  <!-- ── RESOURCES ────────────────────────────────────────────────────────── -->
+  <section class="section section--light" id="resources">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Downloads</p>
+        <h2 class="section-title">Resources</h2>
+        <p class="section-intro">All programme documents, drill guides, and useful links. Downloadable documents will appear here as the season progresses.</p>
+      </div>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon">📄</div>
+          <h4>Training Programme</h4>
+          <p>Full 11-session Thursday programme with self-led conditioning and skills sessions. All drill details, phase progressions, and session content.</p>
+          <span class="resource-tag">Coming soon</span>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">📋</div>
+          <h4>Transition to U14 Guide</h4>
+          <p>Full RFU Regulation 15 comparison, positional guides, welfare information, and physical preparation guide for players and parents.</p>
+          <span class="resource-tag">Coming soon</span>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">◆</div>
+          <h4>1-3-3-1 System Guide</h4>
+          <p>The full playing system document — phases of play, sub-unit responsibilities, defensive systems, and zone-based kicking decisions.</p>
+          <span class="resource-tag">Coming soon</span>
+        </div>
+        <div class="resource-card resource-card--link">
+          <div class="resource-icon">🏉</div>
+          <h4>RFU Regulation 15</h4>
+          <p>Official age-grade rules. Appendix 7 (U13) and Appendix 8 (U14) on the England Rugby website.</p>
+          <a href="https://www.englandrugby.com/run/rules-governance/rfu-rules-and-regulations/regulation-15-age-grade-rugby" target="_blank" rel="noopener" class="resource-link">View at englandrugby.com →</a>
+        </div>
+        <div class="resource-card resource-card--link">
+          <div class="resource-icon">🗺</div>
+          <h4>Hampshire RFU Boys' Pathway</h4>
+          <p>County pathway information and the Hampshire boys' junior rugby programme.</p>
+          <a href="https://hampshirerfu.com/boys" target="_blank" rel="noopener" class="resource-link">View at hampshirerfu.com →</a>
+        </div>
+        <div class="resource-card resource-card--link">
+          <div class="resource-icon">✅</div>
+          <h4>Player Registration (GMS)</h4>
+          <p>All players must be registered before the season starts. Parent/guardian must create or log in to their RFU account first.</p>
+          <a href="https://gms.rfu.com" target="_blank" rel="noopener" class="resource-link">Register at gms.rfu.com →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ──────────────────────────────────────────────────────────── -->
+  <section class="section section--dark" id="contact">
     <div class="container">
       <div class="section-header">
         <p class="section-eyebrow">Get in touch</p>
@@ -653,56 +797,52 @@
           <p>Lead coach: <strong>Martin</strong> &amp; the U14 Coaching Team</p>
           <div class="contact-item"><span class="contact-label">Venue</span><span>North Walls Park, Hilliers Way, Winchester SO23 7AB</span></div>
           <div class="contact-item"><span class="contact-label">Thursday</span><span>6:00pm – 7:30pm · North Walls Park</span></div>
-          <div class="contact-item"><span class="contact-label">Club site</span><a href="https://winchesterrugby.rfu.club" target="_blank" rel="noopener">winchesterrugby.rfu.club</a></div>
+          <div class="contact-item"><span class="contact-label">Club</span><a href="https://winchesterrugby.rfu.club" target="_blank" rel="noopener">winchesterrugby.rfu.club</a></div>
           <div class="contact-item"><span class="contact-label">Register</span><a href="https://gms.rfu.com" target="_blank" rel="noopener">gms.rfu.com (parent/guardian)</a></div>
-        </div>
-        <div class="contact-card">
-          <h3>Bath Rugby DPP — Hampshire Pathway</h3>
-          <p>Hampshire's boys' junior pathway (U14–U16) is delivered by Bath Rugby.</p>
-          <div class="contact-item"><span class="contact-label">Lead</span><span>Matt Lishman · Junior Academy Lead U14–U16</span></div>
-          <div class="contact-item"><span class="contact-label">Email</span><a href="mailto:Matt.Lishman@bathrugby.com">Matt.Lishman@bathrugby.com</a></div>
-          <div class="contact-item"><span class="contact-label">Pathway</span><a href="https://hampshirerfu.com/boys" target="_blank" rel="noopener">hampshirerfu.com/boys</a></div>
         </div>
         <div class="contact-card">
           <h3>Key Dates 2026–27</h3>
           <div class="dates-list">
             <div class="dl-row"><span class="dl-date">19 Jun</span><span>Summer programme begins</span></div>
             <div class="dl-row"><span class="dl-date">1 Aug</span><span>Adapted contact begins (RFU Reg 15.8.6)</span></div>
-            <div class="dl-row"><span class="dl-date">10–14 Aug</span><span>Millfield Rugby Course (confirmed)</span></div>
-            <div class="dl-row"><span class="dl-date">28 Aug</span><span>DPP simulation trial match</span></div>
-            <div class="dl-row"><span class="dl-date">Sep 2026</span><span>DPP nominations open</span></div>
-            <div class="dl-row dl-row--highlight"><span class="dl-date">5 Sep</span><span>Season 2026–27 begins</span></div>
+            <div class="dl-row"><span class="dl-date">Aug 2026</span><span>Bath Walhampton &amp; Embley camps</span></div>
+            <div class="dl-row"><span class="dl-date">28 Aug</span><span>End of summer review session</span></div>
+            <div class="dl-row dl-row--highlight"><span class="dl-date">5 Sep</span><span><strong>Season 2026–27 begins</strong></span></div>
           </div>
         </div>
         <div class="contact-card">
           <h3>Useful Links</h3>
           <div class="contact-item"><span class="contact-label">RFU Reg 15</span><a href="https://www.englandrugby.com/run/rules-governance/rfu-rules-and-regulations/regulation-15-age-grade-rugby" target="_blank" rel="noopener">englandrugby.com</a></div>
-          <div class="contact-item"><span class="contact-label">Age grade CoP</span><a href="https://www.englandrugby.com/run/coaching/age-grade-rugby/codes-of-practice" target="_blank" rel="noopener">Codes of Practice</a></div>
-          <div class="contact-item"><span class="contact-label">Registration</span><a href="https://gms.rfu.com" target="_blank" rel="noopener">gms.rfu.com</a></div>
           <div class="contact-item"><span class="contact-label">Hants RFU</span><a href="https://hampshirerfu.com/boys" target="_blank" rel="noopener">hampshirerfu.com/boys</a></div>
+          <div class="contact-item"><span class="contact-label">Registration</span><a href="https://gms.rfu.com" target="_blank" rel="noopener">gms.rfu.com</a></div>
           <div class="contact-item"><span class="contact-label">Bath camps</span><a href="https://www.bathrugby.com/community/residential-rugby-camps" target="_blank" rel="noopener">bathrugby.com</a></div>
+          <div class="contact-item"><span class="contact-label">Embley camp</span><a href="https://embley.org.uk/sports-performance-camps" target="_blank" rel="noopener">embley.org.uk</a></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ── FOOTER ───────────────────────────────────────────────────────────── -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <span class="footer-logo">WINCHESTER RFC</span>
-        <span class="footer-sub">U14 BOYS · SEASON 2026–27</span>
+        <span class="footer-diamond">◆</span>
+        <div>
+          <span class="footer-logo">WINCHESTER RFC</span>
+          <span class="footer-sub">U14 BOYS · SEASON 2026–27</span>
+        </div>
       </div>
       <div class="footer-links">
+        <a href="#news">News</a>
         <a href="#intro">Welcome</a>
         <a href="#training">Training</a>
-        <a href="#rules">U14 Rules</a>
-        <a href="#positions">Positions</a>
+        <a href="#system">System</a>
+        <a href="#rules">Rules</a>
         <a href="#welfare">Welfare</a>
         <a href="#camps">Camps</a>
         <a href="#contact">Contact</a>
       </div>
-      <p class="footer-note">Black and Amber since 1929 · North Walls Park, Winchester · RFU Regulation 15, effective 1 August 2025 · Martin &amp; the U14 Coaching Team</p>
+      <p class="footer-note">Black and Amber since 1929 · North Walls Park, Winchester · Martin &amp; the U14 Coaching Team · RFU Regulation 15, effective 1 August 2025</p>
     </div>
   </footer>
 
