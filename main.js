@@ -65,3 +65,28 @@ if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
     obs.observe(el);
   });
 }
+
+// ── Position self-check (saved on this device only) ───────────────────────
+(function () {
+  const boxes = document.querySelectorAll('.selfcheck');
+  if (!boxes.length) return;
+  const KEY = 'wrfc-u14-selfcheck';
+  let store = {};
+  try { store = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { store = {}; }
+  const out = document.querySelector('.pg-progress');
+  function update() {
+    const g = [...boxes].filter(b => b.dataset.key.includes('-good-'));
+    const e = [...boxes].filter(b => b.dataset.key.includes('-excellent-'));
+    const n = a => a.filter(b => b.checked).length;
+    if (out) out.textContent = 'Good: ' + n(g) + ' of ' + g.length + ' ticked  ·  Excellent: ' + n(e) + ' of ' + e.length + ' ticked';
+  }
+  boxes.forEach(b => {
+    b.checked = !!store[b.dataset.key];
+    b.addEventListener('change', () => {
+      if (b.checked) store[b.dataset.key] = 1; else delete store[b.dataset.key];
+      try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {}
+      update();
+    });
+  });
+  update();
+})();
